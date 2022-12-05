@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do_List
+
+    </title>
+    <link rel="stylesheet" href="./Todo.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="vue">
+
+
+        <!-- ////////////// Greeting section -->
+        <section>
+            <h1>what's up Dear user </h1>
+        </section>
+        <br>
+
+
+        <!-- /////////////// write your task below -->
+        <section>
+            <h3>CREATE AN TO DO LIST</h3>
+            <form id="form">
+                <h4>what is in your to do list :) Let's create a new one</h4><br>
+                <input type="text" placeholder="Add from here" autocomplete="off" id="enterTODO"
+                    v-model="input_content"><br>
+                <button type="submit" class="addToDo" v-on:click="addItem() ">Add
+                    TO-DO </button>
+            </form>
+        </section>
+
+
+        <!-- //////////////// TASK STATUS -->
+        <section>
+            <template v-for="(a,index) in todos">
+                <div class="showCase">
+                    <button class="show taskStatus" v-on:click="taskCompleted(index)"
+                        v-bind:class="{fulfill:todos[index].fulfilled}">{{todos[index].taskStatus}}</button>
+                    <div class="show" id="task">{{todos[index].task}}______________created on
+                        {{todos[index].Created_on}}</div>
+                    <button class="show " v-on:click="deleteTask(index)" class="deleteTask">delete</button><br>
+                </div>
+            </template>
+        </section>
+
+
+    </div>
+
+    <script src="./Todo.js"></script>
+</body>
+
+</html>

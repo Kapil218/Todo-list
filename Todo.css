@@ -1,0 +1,81 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    background-color: aquamarine;
+    margin: 30px;
+}
+#name{
+   outline: none;
+ border-width: 0;  
+font-size: large;
+}
+h1,h3,h4{
+    margin: 0 10px;
+    text-align: center;
+}
+#enterTODO{
+    height: 50px;
+    margin: 10px 10px;
+    border: 2px solid rebeccapurp;
+    font-size: large;
+    outline: none;
+    border-width: 0;  
+    background-color: rgb(184, 191, 192);
+    border: 1px solid rgb(156, 21, 21);
+    border-radius: 5px;
+}
+
+.addToDo{
+    margin: 0 20px;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(190, 53, 142);
+     min-width: 200px; 
+    /* max-width: 600px;  */
+    border-radius: 5px;
+}
+#form{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin:  20px auto;
+}
+.showCase{
+    font-family: s;
+    background-color: rgb(215 217 188);
+padding: 0 2%;
+margin: 10px 200px;
+border: 5px solid rgb(110, 225, 118);
+border-radius: 20px ;
+
+}
+.show{
+    border-radius: 5px;
+    margin:  10px 0;
+}
+
+.taskStatus{
+   
+    font-size: large;
+    border-radius: 5px;
+    width: 100px;
+    background-color: red;
+}
+.fulfill{
+    border-radius: 5px;
+ 
+    width: 100px;
+    background-color: greenyellow;
+}
+/* .deleteTask{
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 50px;
+} */
+/* #task{
+    max-width: 700px;
+} */
